@@ -77,27 +77,45 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 GOOD LUCK 😀
 */
 
-const dolphins = (96 + 108 + 89) / 3
-const koalas = (88 + 91 + 110) / 3
+// const dolphins = (96 + 108 + 89) / 3
+// const koalas = (88 + 91 + 110) / 3
 
-console.log(dolphins, koalas)
-if (dolphins > koalas) {
-  console.log("The winner is Dolphins" )
-} else if (dolphins < koalas) {
-  console.log("The winner is Koalas")
-} else if (dolphins === koalas) {
-  console.log("DRAW")
-}
+// console.log(dolphins, koalas)
+// if (dolphins > koalas) {
+//   console.log("The winner is Dolphins" )
+// } else if (koalas > dolphins) {
+//   console.log("The winner is Koalas")
+// } else if (dolphins === koalas) {
+//   console.log("DRAW")
+// }
 
-// BONUS
+// // BONUS
 
-const dolphinsScore = (97 + 112 + 101)
-const koalasScore = (109 + 95 + 123)
+// const dolphinsScore = (97 + 112 + 101)
+// const koalasScore = (109 + 95 + 123)
 
-if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
-  console.log("The winner is dolphinsScore")
-} else if (koalasScore > dolphinsScore && koalasScore >= 100) {
-  console.log("The winner is Koalas")
-} else if (dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >= 100) {
-  console.log("DRAW")
-}
+// if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
+//   console.log("The winner is dolphinsScore")
+// } else if (koalasScore > dolphinsScore && koalasScore >= 100) {
+//   console.log("The winner is Koalas")
+// } else if (dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >= 100) {
+//   console.log("DRAW")
+// }
+
+
+
+// function declaration 
+// function calcAge(birthYear) {
+//   return 2037 - birthYear
+// }
+
+// const age1 = calcAge(1991);
+
+// // function expression
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear
+// }
+// const age2 = calcAge2(1991);
+
+// console.log(age1, age2)
+

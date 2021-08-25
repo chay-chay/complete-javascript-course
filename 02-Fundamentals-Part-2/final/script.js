@@ -382,42 +382,42 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
+// Chay's code
+// const mark = {
+//   fullName: 'Mark Miller',
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2
+//     return this.bmi
+//   }
+// }
 
-const mark = {
-  fullName: 'Mark Miller',
-  mass: 78,
-  height: 1.69,
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2
-    return this.bmi
-  }
-}
+// mark.calcBMI()
+// const john = {
+//   fullName: 'John Smith',
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function() {
+//     this.bmi = this.mass / this.height **2
+//     return this.bmi;
+//   }
+// }
 
-mark.calcBMI()
-const john = {
-  fullName: 'John Smith',
-  mass: 92,
-  height: 1.95,
-  calcBMI: function() {
-    this.bmi = this.mass / this.height **2
-    return this.bmi;
-  }
-}
-
-john.calcBMI()
+// john.calcBMI()
 
 
 
-console.log("Mark", mark.bmi)
-console.log("John", john.bmi)
+// console.log("Mark", mark.bmi)
+// console.log("John", john.bmi)
 
-console.log(`Mark Miller's BMI is higher than ${mark.bmi} John Smith's BMI ${john.bmi}  !`)
+// console.log(`Mark Miller's BMI is higher than ${mark.bmi} John Smith's BMI ${john.bmi}  !`)
 
-if (mark.bmi > john.bmi){
-  console.log(`${mark.fullName}'s BMI is higher than ${mark.bmi} ${john.fullName}'s BMI ${john.bmi}  !`)
-}else {
-  console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
-}
+// if (mark.bmi > john.bmi){
+//   console.log(`${mark.fullName}'s BMI is higher than ${mark.bmi} ${john.fullName}'s BMI ${john.bmi}  !`)
+// }else {
+//   console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+// }
 
 
 /*
@@ -597,7 +597,35 @@ HINT: Call calcTip in the loop and use the push method to add values to the tips
 
 GOOD LUCK 😀
 */
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
 
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const tips = []
+const total = []
+
+for (let i = 0; i < bills.length; i++){
+  const tip = calcTip(bills[i])
+  // console.log(tip)
+  tips.push(tip)
+  total.push(bills[i]+tips[i])
+  // console.log(tips)
+}
+
+const calcAverage = function(arr) {
+  let sum = 0
+  for (let i = 0; i < arr.length; i++){
+    sum += arr[i]
+  }
+  console.log(sum / arr.length)
+  return sum / arr.length
+ 
+}
+
+
+calcAverage(total)
 /*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;

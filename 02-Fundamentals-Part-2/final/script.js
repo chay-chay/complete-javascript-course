@@ -596,36 +596,39 @@ HINT: Call calcTip in the loop and use the push method to add values to the tips
   4.3. Call the function with the 'totals' array
 
 GOOD LUCK 😀
+
 */
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+// my code
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
 
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
-const tips = []
-const total = []
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+// const tips = []
+// const total = []
 
-for (let i = 0; i < bills.length; i++){
-  const tip = calcTip(bills[i])
-  // console.log(tip)
-  tips.push(tip)
-  total.push(bills[i]+tips[i])
-  // console.log(tips)
-}
+// for (let i = 0; i < bills.length; i++){
+//   const tip = calcTip(bills[i])
+//   // console.log(tip)
+//   tips.push(tip)
+//   total.push(bills[i]+tips[i])
+//   // console.log(tips)
+// }
 
-const calcAverage = function(arr) {
-  let sum = 0
-  for (let i = 0; i < arr.length; i++){
-    sum += arr[i]
-  }
-  console.log(sum / arr.length)
-  return sum / arr.length
+// const calcAverage = function(arr) {
+//   let sum = 0
+//   for (let i = 0; i < arr.length; i++){
+//     sum += arr[i]
+//   }
+//   console.log(sum / arr.length)
+//   return sum / arr.length
  
-}
+// }
 
 
-calcAverage(total)
+// calcAverage(total)
+
 /*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;

@@ -102,19 +102,19 @@ GOOD LUCK 😀
 // HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores 😉
 
 
-const calcAverage = (a,b,c) => (a + b + c) / 3
+// const calcAverage = (a,b,c) => (a + b + c) / 3
 
-const dolphinsScore = calcAverage(44, 23, 71)
-const koalasScore = calcAverage(85, 54, 41)
+// const dolphinsScore = calcAverage(44, 23, 71)
+// const koalasScore = calcAverage(85, 54, 41)
 
-function checkWinner(dolphinsAve, koalasAve) {
-    if (dolphinsAve >= 2 * koalasAve) {
-        console.log("Dolphins Won!")
-    } else if (koalasAve >= 2 * dolphinsAve){
-        console.log("koalas Won!")
-    } else {
-        console.log("No team wins")
-    }
-}
+// function checkWinner(dolphinsAve, koalasAve) {
+//     if (dolphinsAve >= 2 * koalasAve) {
+//         console.log("Dolphins Won!")
+//     } else if (koalasAve >= 2 * dolphinsAve){
+//         console.log("koalas Won!")
+//     } else {
+//         console.log("No team wins")
+//     }
+// }
 
-console.log(checkWinner(dolphinsScore, koalasScore))
+// console.log(checkWinner(dolphinsScore, koalasScore))

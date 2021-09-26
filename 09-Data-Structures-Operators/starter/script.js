@@ -251,3 +251,17 @@ for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
 */
+
+
+// const button = document.getElementById('submit-button')
+// const todos = document.getElementById('todos')
+
+// button.addEventListener('click', handleClick)
+
+// function handleClick() {
+//   const todoInput = document.getElementById('todo-input').value
+//   console.log(todoInput)
+//   const todoList = document.createElement('li')
+//   todoList.innerText = todoInput
+//   todos.appendChild(todoList)
+// }
